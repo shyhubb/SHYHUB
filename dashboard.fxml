@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="adminpane" layoutX="7.0" prefHeight="550.0" prefWidth="225.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="775.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="37.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMAGES/anh-cute-meo-con-nguy-hiem.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="57.0" layoutY="492.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="109.0" text="LOG OUT" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="namelable" layoutX="54.0" layoutY="211.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="225.0" prefHeight="534.0" prefWidth="718.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="-0.20000000000004547" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="45.0" layoutY="46.0" text="YOU BALANCE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance" layoutX="176.0" layoutY="41.0" text="0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="570.0" layoutY="41.0" mnemonicParsing="false" onAction="#loadbalance" prefHeight="30.0" prefWidth="140.0" text="LOAD NEW BALACE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMAGES/istockphoto-1312146258-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="93.0" layoutY="419.0" mnemonicParsing="false" onAction="#rut" prefHeight="30.0" prefWidth="98.0" text="RÚT XIỀN" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="115.0" layoutY="152.0" text="RÚT TIỀN">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="291.0" layoutY="91.0" text="DỊCH VỤ CỦA CHÚNG TÔI &lt;3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="300.0" layoutY="152.0" text="NẠP TIỀN">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="253.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMAGES/istockphoto-1284062108-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="279.0" layoutY="419.0" mnemonicParsing="false" onAction="#nap" prefHeight="30.0" prefWidth="98.0" text="NẠP XIỀN" textFill="#30a66b">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="470.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMAGES/istockphoto-1312144800-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="505.0" layoutY="152.0" text="CHUYỂN TIỀN">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="496.0" layoutY="371.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="97.0" text="CHUYỂN XIỀN" textFill="#313563">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="43.0" layoutX="505.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IMAGES/Email-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="562.0" layoutY="486.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" text="HÒM THƯ GÓP Ý">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="ruttext" layoutX="67.0" layoutY="464.0" prefHeight="18.0" prefWidth="166.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField editable="false" layoutX="67.0" layoutY="367.0" prefHeight="38.0" prefWidth="150.0" />
+                  <TextField layoutX="253.0" layoutY="367.0" prefHeight="38.0" prefWidth="150.0" />
+                  <Label fx:id="naptext" layoutX="253.0" layoutY="464.0" prefHeight="18.0" prefWidth="166.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

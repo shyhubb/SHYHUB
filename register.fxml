@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="150.0" layoutY="25.0" onDragDetected="#create_account" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="25.0">
+               <children>
+                  <Label layoutX="201.0" layoutY="24.0" text="REGISTER NEW BANK ACCOUNT" textFill="#516eff">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="224.0" layoutY="437.0" maxWidth="300.0" mnemonicParsing="false" onAction="#return_login" prefHeight="35.0" prefWidth="250.0" text="LOG IN" textFill="#0b0b0b">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="245.0" layoutY="397.0" text="REGISTER SUCCESFULL . LOGIN NOW" textFill="#299134">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="regis" layoutX="224.0" layoutY="340.0" mnemonicParsing="false" onAction="#create_account" prefHeight="35.0" prefWidth="250.0" text="CREATE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="statuslogin" layoutX="256.0" layoutY="67.0" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="97.0" text="ACOUNT ">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="153.0" text="PASS WORD">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="204.0" text="NAME">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="372.0" layoutY="97.0" text="CODE BANK">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="372.0" layoutY="146.0" text="EMAIL">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="372.0" layoutY="204.0" text="DEMO">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="accounttext" layoutX="115.0" layoutY="92.0" prefHeight="30.0" prefWidth="177.0" />
+                  <TextField fx:id="nametext" layoutX="115.0" layoutY="199.0" prefHeight="30.0" prefWidth="178.0" />
+                  <TextField fx:id="codebanktext" layoutX="465.0" layoutY="91.0" prefHeight="30.0" prefWidth="178.0" />
+                  <TextField fx:id="emailtext" layoutX="465.0" layoutY="141.0" prefHeight="30.0" prefWidth="178.0" />
+                  <TextField layoutX="465.0" layoutY="199.0" prefHeight="30.0" prefWidth="178.0" />
+                  <TextField fx:id="passwordtext" layoutX="115.0" layoutY="148.0" prefHeight="30.0" prefWidth="178.0" />
+                  <Label fx:id="accstatus" layoutX="224.0" layoutY="281.0" textFill="#29ae44">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
